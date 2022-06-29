@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Open+Sans:ital,wght@0,600;0,700;0,800;1,500;1,600;1,700;1,800&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@font-face{
+    font-family:coolFont;
+    src:url(font.otf);
+}
+
+
+html{
+    color: black;
+    /* background-color: rgb(255,181,255); */
+    background-color: pink;
+    font-family: coolFont;
+    overflow-x: hidden;
+    text-align:center;
+}
+body{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 80px;
+    margin-bottom:0px;
+    margin-top:10px;
+    font-weight: bold;
+}
+h2{
+    font-size:40px;
+    margin-top:5px;
+    margin-bottom:10px;
+    
+}
+h3{
+    font-size:25px;
+    margin-bottom:8px;
+
+}
+
+h4{
+    margin:0px;
+    color: red;
+}
+
+#index{
+    margin-bottom: 0px;
+}
+
+#projects{
+    margin-top:0px;
+    width:50%;
+}
+
+.project{
+    margin-bottom:30px;
+}
+
+#disclaimer{
+    color:white;
+}
+
+
+hr {
+    width:110%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid white;
+    padding: 0px;
+    margin:3px; 
+}
+
+
+.line{
+    position:absolute;
+    background-color:black;
+    overflow: hidden;
+}
+
+#line1{
+    top:0;
+    left:0;
+    width: 100px;
+    height: 100px;
+    /* background-color:black; */
+}
+
+#line2{
+    position:absolute;
+    top:40px;
+    left:0;
+    width: 200px;
+    height: 1px;
+    animation: animate 3s linear infinite;
+}
+
+#line3{
+    top: 100px;
+    left:0;
+    width:300px;
+    height:2px;
+    background-color: white;
+    animation: animate 2s linear infinite alternate
+}
+
+#line4{
+    top: 500px;
+    left:0;
+    width:300px;
+    height:2px;
+    background-color: white;
+    animation: animate 2.5s linear infinite alternate-reverse;
+}
+
+
+
+
+@keyframes animate
+{
+    0%{
+        transform: translate(-100px,0px);
+    }
+    25%{
+        transform: translate(105vw,0px);
+    }
+    26%{
+        transform: translate(105vw,100px);
+    }
+    50%{
+        transform: translate(-100px,100px);
+    }
+    51%{
+        transform: translate(-100px, 300px);
+    }
+    75%{
+        transform: translate(105vw,300px);
+    }
+    76%{
+        transform: translate(105vw,500px);
+    }
+    100%{
+        transform: translate(-100px,500px);
+    }
+
+}
