@@ -6,9 +6,11 @@
 
 
 html{
-    color: black;
+    color: rgb(0,251,58);
+
     /* background-color: rgb(255,181,255); */
-    background-color: pink;
+    background-image: url(bg3.jpg);
+    filter: blur(0.5px);
     font-family: coolFont;
     overflow-x: hidden;
     text-align:center;
@@ -27,16 +29,20 @@ body{
 }
 
 h1{
+    color: rgb(252,48,0);
     font-size: 80px;
-    margin-bottom:0px;
+    margin-bottom:-10px;
     margin-top:10px;
     font-weight: bold;
+    text-shadow: 1px white;
 }
+
+
 h2{
+    color: rgb(252,48,0);
     font-size:40px;
     margin-top:5px;
     margin-bottom:10px;
-    
 }
 h3{
     font-size:25px;
@@ -46,7 +52,8 @@ h3{
 
 h4{
     margin:0px;
-    color: red;
+    color: rgb(252,48,0);
+
 }
 
 #index{
@@ -63,7 +70,10 @@ h4{
 }
 
 #disclaimer{
-    color:white;
+    color:black;
+    animation: blinker 5s linear infinite;
+    margin-top:-10px;
+    margin-bottom:10px;
 }
 
 
@@ -72,7 +82,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 4px solid white;
+    border-top: 4px solid rgb(215,21,17);
     padding: 0px;
     margin:3px; 
 }
@@ -80,7 +90,7 @@ hr {
 
 .line{
     position:absolute;
-    background-color:black;
+    background-color:rgb(215,21,17);
     overflow: hidden;
 }
 
@@ -89,64 +99,22 @@ hr {
     left:0;
     width: 100px;
     height: 100px;
-    /* background-color:black; */
-}
-
-#line2{
-    position:absolute;
-    top:40px;
-    left:0;
-    width: 200px;
-    height: 1px;
-    animation: animate 3s linear infinite;
-}
-
-#line3{
-    top: 100px;
-    left:0;
-    width:300px;
-    height:2px;
-    background-color: white;
-    animation: animate 2s linear infinite alternate
-}
-
-#line4{
-    top: 500px;
-    left:0;
-    width:300px;
-    height:2px;
-    background-color: white;
-    animation: animate 2.5s linear infinite alternate-reverse;
+    background-color:rgb(215,21,17);;
 }
 
 
-
-
-@keyframes animate
-{
-    0%{
-        transform: translate(-100px,0px);
-    }
-    25%{
-        transform: translate(105vw,0px);
-    }
-    26%{
-        transform: translate(105vw,100px);
-    }
-    50%{
-        transform: translate(-100px,100px);
-    }
-    51%{
-        transform: translate(-100px, 300px);
-    }
-    75%{
-        transform: translate(105vw,300px);
-    }
-    76%{
-        transform: translate(105vw,500px);
-    }
-    100%{
-        transform: translate(-100px,500px);
-    }
-
+a{  
+    color: white;
+    text-decoration: underline;
+    font-size:15px
 }
+
+a:visited {color:white;}
+a:hover {color:white;}
+a:active {color:white;}
+
+@keyframes blinker {
+    50% {
+      color: rgb(252,48,0);
+    }
+  }
