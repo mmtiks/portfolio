@@ -7,101 +7,14 @@
 
 html{
     /* color: rgb(0,251,58); */
-    color: white;
-    /* background-color: rgb(255,181,255); */
-    background-image: url(bg3.jpg);
+    color: black;
+    background-color: rgb(199,174,133);
+        /* background-image: url(bg3.jpg); */
     filter: blur(0.5px);
     font-family: coolFont;
     overflow-x: hidden;
     text-align:center;
 }
-body{
-    
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1{
-    color: white;
-    font-size: 80px;
-    margin-bottom:-10px;
-    margin-top:10px;
-    font-weight: bold;
-    text-shadow: 1px white;
-}
-
-
-h2{
-    color: rgb(252,48,0);
-    font-size:40px;
-    margin-top:5px;
-    margin-bottom:10px;
-}
-h3{
-    font-size:25px;
-    margin-bottom:8px;
-
-}
-
-h4{
-    margin:0px;
-    color: rgb(252,48,0);
-
-}
-
-#index{
-    margin-bottom: 0px;
-}
-
-#projects{
-    margin-top:0px;
-    width:50%;
-}
-
-.project{
-    margin-bottom:30px;
-}
-
-#disclaimer{
-    color:black;
-    animation: blinker 5s linear infinite;
-    margin-top:-10px;
-    margin-bottom:5px;
-}
-
-
-hr {
-    width:110%;
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 4px solid rgb(215,21,17);
-    padding: 0px;
-    margin:3px; 
-}
-
-
-.line{
-    position:absolute;
-    background-color:rgb(215,21,17);
-    overflow: hidden;
-}
-
-#line1{
-    top:0;
-    left:0;
-    width: 100px;
-    height: 100px;
-    background-color:rgb(215,21,17);;
-}
-
 
 a{  
     color: white;
@@ -113,8 +26,47 @@ a:visited {color:white;}
 a:hover {color:white;}
 a:active {color:white;}
 
-@keyframes blinker {
-    50% {
-      color: rgb(252,48,0);
-    }
-  }
+
+
+h1{
+    color: black;
+    font-size: 80px;
+    margin-bottom:-10px;
+    margin-top:10px;
+    font-weight: bold;
+    text-shadow: 1px white;
+}
+
+
+h2{
+    font-size:40px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+h3{
+    font-size:25px;
+    margin-bottom:8px;
+
+}
+.project{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    margin:5px;
+    padding: 20px;
+    margin:5%;
+    width: 20%;
+    height: 30vh;
+}
+
+.columns{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
